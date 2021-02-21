@@ -517,7 +517,7 @@ header {
     height: 2em;
     background-color: #111122;
     margin: 0 0 0 0;
-    padding: auto;
+
     font-size: 2em;
     text-align: center;
     line-height: 2em;
@@ -563,7 +563,7 @@ a:hover {
     display: flex;
     --flex: inherit;
     overflow: hidden;
-    text-overflow: hidden;
+
     --background-color: yellow;
     white-space: nowrap;
     width: 0;
@@ -632,7 +632,7 @@ a:hover {
 
 
 .container {
-    margin-left: 25%;
+    margin-left: 15%;
     width: 1000px;
     display: flex;
     flex-wrap: wrap;
@@ -848,13 +848,48 @@ i {
     .main-container {
         width: 95%;
     }
+    .line-1{
+        font-size:60px;
+    }
+    .post-wrapper {
+        display: grid;
+        /*grid-template-columns: repeat(auto-fit, 320px 320px);*/
+        grid-template-columns: repeat(auto-fit, 320px 320px);
+        gap: 25px;
+        justify-content: center;
+    }
+    .container {
+        margin-left:2%;
+
+    }
+}
+@media screen and (max-width: 1030px) {
+    .main-container {
+        width: 95%;
+    }
+    .line-1{
+        font-size:50px;
+    }
+    .post-wrapper {
+        display: grid;
+        /*grid-template-columns: repeat(auto-fit, 320px 320px);*/
+        grid-template-columns: repeat(auto-fit, 320px 320px);
+        gap: 25px;
+        justify-content: center;
+    /*}*/
+    /*.container {*/
+    /*    margin-left:10%;*/
+    /*    display: grid;*/
+    /*    grid-template-columns: repeat(auto-fit, 320px 320px);*/
+    /*    justify-content:normal;*/
+    /*}*/
 }
 
-@media screen and (max-width: 800px) {
-    .main-container {
-        width: 70%;
-    }
+@media screen and (max-width: 700px) {
 
+    .line-1{
+        font-size:25px;
+    }
     .intro-wrapper {
 
         grid-template-columns: 1fr;
@@ -866,7 +901,9 @@ i {
 
     .about-wrapper {
         width: 90%;
-        justify-items: center;
+    }
+    #skills{
+        display: grid;
     }
 
 
@@ -881,9 +918,10 @@ i {
     }
 
     .container {
+        margin-left:10%;
         width: 50%;
         display: grid;
-
+        justify-content:normal;
     }
 
 }
