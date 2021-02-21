@@ -876,7 +876,7 @@ i {
         grid-template-columns: repeat(auto-fit, 320px 320px);
         gap: 25px;
         justify-content: center;
-    /*}*/
+    }
     /*.container {*/
     /*    margin-left:10%;*/
     /*    display: grid;*/
